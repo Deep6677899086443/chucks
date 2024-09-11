@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+
+    <script>
+        function loading(){
+    fetch('https://api.chucknorris.io/jokes/random?category=food')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function load(){
+        fetch('https://api.chucknorris.io/jokes/random?category=animal')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error));
+    }
+    function watch(){
+    fetch('https://api.chucknorris.io/jokes/random?category=career')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function rolax(){
+    fetch('https://api.chucknorris.io/jokes/random?category=fashion')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function jordan(){
+    fetch('https://api.chucknorris.io/jokes/random?category=movie')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function guess(){
+    fetch('https://api.chucknorris.io/jokes/random?category=money')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function boss(){
+    fetch('https://api.chucknorris.io/jokes/random?category=history')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function shirt(){
+    fetch('https://api.chucknorris.io/jokes/random?category=music')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function kohli(){
+    fetch('https://api.chucknorris.io/jokes/random?category=political')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function hollister(){
+    fetch('https://api.chucknorris.io/jokes/random?category=science')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function train(){
+    fetch('https://api.chucknorris.io/jokes/random?category=travel')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+    function bus(){
+    fetch('https://api.chucknorris.io/jokes/random?category=sport')
+    .then(response=>response.json())
+    .then(json => document.getElementById("chucks").innerHTML=json.value)
+    .catch(error => console.log('unable to reach URL'+error))
+    }
+
+
+    </script>
+</head>
+<body>
+<label>What's chuck doing today?</label>
+<p id="chucks"></p>
+
+<button onclick="loading()">NEW JOKES</button>
+<button onclick="load()">JOKES OF ANIMAL</button>
+<button onclick="watch()">Career jokes</button>
+<button onclick="rolax()">Fashion</button>
+<button onclick="jordan()">movie</button>
+<button onclick="guess()">money</button>
+<button onclick="boss()">history</button>
+<button onclick="shirt()">music</button>
+<button onclick="kohli()">political</button>
+<button onclick="hollister()">science</button>
+<button onclick="train()">travel</button>
+<button onclick="bus()">sport</button>
+
+
+</body>
